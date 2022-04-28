@@ -33,6 +33,12 @@ Regular expression for JavaScript:
 
 /((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
 </p>
+<br>
+<p>
+docker
+
+ex: $ docker run -d -p 33060:3306 --name task_manager -e MYSQL_ROOT_PASSWORD=myseret
+</p>
 
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
