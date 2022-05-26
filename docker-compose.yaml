@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+
+  app:
+    image: nest-be
+    ports:
+      - 3000:3000
+    enviroments:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: task_manager
+
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - manager-mysql-data:/var/lib/mysql
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: task_manager

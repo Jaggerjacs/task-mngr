@@ -37,7 +37,7 @@ Regular expression for JavaScript:
 <p>
 docker
 
-ex: $ docker run -d -p 33060:3306 --name task_manager -e MYSQL_ROOT_PASSWORD=myseret
+ex: $ docker run --name task_manager -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=task_manager -d mysql
 </p>
 
 
